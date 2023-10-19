@@ -63,7 +63,7 @@ const findEditThenSave = (personId, done) => {
     else {
       data.favoriteFoods.push("hamburger");
       data.save(function (err2, data2) {
-        if (err) done(err);
+        if (err2) done(err2);
         else done(null, data2);
       });
     }
